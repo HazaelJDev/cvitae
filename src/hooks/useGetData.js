@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-const api = 'https://apitest-b3778.firebaseapp.com/api/v1/info';
+const api = 'https://cvitaeh.herokuapp.com/api/V1/info';
+/* var r = new Request('https://pokeapi.co/api/v2/pokemon/ditto', {
+    method: 'GET',
+    mode: 'cors',
+    credentials: 'omit',
+    cache: 'default',
+    referrerPolicy: 'no-referrer'
+}); */
 
-
-const config = { 
-    headers: {
-        'Access-Control-Allow-Origin': "*"
-    }
-};
 const useGetData = () => {
     const [data,setData] = useState([]);
 

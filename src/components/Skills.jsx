@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {keyframes} from "styled-components";
-
+import H2Styled from '../styled/H2Styled';
 const move = keyframes`
   0% {background-position: 0 0;}
   100% {background-position: 50px 50px;}
@@ -11,7 +11,7 @@ const SkillsSpan = styled.span`
   height: 100%;
   width: ${props => props.width};
   border-radius: 8px;
-  background-color: #C2185B;
+  background-color: #5C73F2;
   overflow: hidden;
   position: relative;
   box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), 
@@ -34,7 +34,7 @@ const SkillsLine = styled.div`
   height: 8px;
   position: relative;
   border-radius: 50px;
-  background-color: #F8BBD0;
+  background-color: #82B8D9;
 `;
 const SkillsH5 = styled.h5`
   margin: .5em 0;
@@ -50,6 +50,7 @@ const SkillsContainer = styled.div`
 
 const Skills = (props) => (
   <div className="Skills">
+    <H2Styled data="Skills"/>
     <SkillsContainer>
       {props.data.map((skill,index) => (
           <div className="Skills-item" key={`Skill-${index}`}>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
+import LoaderStyled from '../styled/LoaderStyled';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 import Info from '../components/Info';
@@ -9,6 +10,7 @@ import Experiencie from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
 import useGetData from '../hooks/useGetData';
+
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -32,7 +34,7 @@ const App = () => {
         }
     } */
     console.log(data);
-    return data.length === 0 ? <h1>Cargando...</h1> : (
+    return data.length === 0 ? <LoaderStyled> Cargando...</LoaderStyled> : (
         <Main>
             <GlobalStyle />
             <Sidebar >
