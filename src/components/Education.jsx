@@ -6,7 +6,7 @@ import PStyled from '../styled/PStyled';
 
 const Education = props => (
   <div className="Education">
-    <H2Styled data="Education" />
+    <H2Styled data={props.lang == "en" ? "Education" : "Educación"} />
     <div className="Education-container">
         {props.data.map((edu,index) => (
           <div className="Education-item" key={`Edu-${index}`}>

@@ -6,7 +6,7 @@ const StyledH2 = styled.h2`
   font-weight: 300;
   letter-spacing: .8px;
   margin: 1em 0 0 0;
-  color: #5C73F2;
+  color: ${({theme}) => theme.h2};
 `;
 
 const H2Styled = ({data}) => <StyledH2>{data}</StyledH2>;

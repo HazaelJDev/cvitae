@@ -5,7 +5,7 @@ import PStyled from '../styled/PStyled';
 
 const Certificates = (props) => (
   <div className="Certificates">
-    <H2Styled data="Certificates" /> 
+    <H2Styled data={props.lang == "en" ? "Certificates" : "Certificados"} /> 
     <div className="Certificates-container">
         {props.data.map((cert,index) => (
           <div className="Certificates-item" key={`Certificates-${index}`}>

@@ -15,7 +15,7 @@ const SocialLi = styled.li`
     margin: 0 1em 0 0;
 `;
 const SocialAnchor = styled.a`
-    color: #212121;
+    color: ${({ theme }) => theme.h34};
     text-decoration: none;
     font-size: 1.2em;
 `;
@@ -24,7 +24,7 @@ const SocialIcon = styled.i`
 `;
 
 const facebook = {
-    color: "#3b5998"   
+    color: ({ theme }) => theme.facebookLogo,
 };
 const twitter = {
     color: "#38a1f3"   
@@ -33,7 +33,7 @@ const linkedin = {
     color: "#0e76a8"   
 };
 const github = {
-    color: "#333"   
+    color: ({ theme }) => theme.github,
 };
 
 const getColor = name => {

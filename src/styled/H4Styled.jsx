@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledH4 = styled.h4`
-  color: #212121;
+  color: ${({theme}) => theme.h34};
   font-weight: 500;
   margin: .5em 0;
 `;

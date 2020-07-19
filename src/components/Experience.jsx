@@ -5,11 +5,11 @@ import H4Styled from '../styled/H4Styled';
 import PStyled from '../styled/PStyled';
 
 const Experiencie = (props) => (
-  <div className="Experiencie">
-    <H2Styled data="Experiencie"/>
-    <div className="Experiencie-container">
+  <div className="Experience">
+    <H2Styled data={props.lang == "en" ? "Experience" : "Experiencia"}/>
+    <div className="Experience-container">
       {props.data.map((exp,index) => (
-        <div className="Experiencie-item" key={`Experiencie-${index}`}>
+        <div className="Experience-item" key={`Experience-${index}`}>
           <H3Styled>{exp.jobTitle}</H3Styled>
           <H4Styled>{exp.company}, <span>{exp.startDate} - {exp.endDate}</span></H4Styled>
           <PStyled data={exp.jobDescription} />
