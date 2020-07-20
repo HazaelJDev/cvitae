@@ -32,7 +32,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
             template: "./public/index.html",
             file: "./index.html"
         }),
-        new FaviconsWebpackPlugin('./public/icon.png')
+        new FaviconsWebpackPlugin('./public/favicon.png')
     ]
 
 }
